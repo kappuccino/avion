@@ -1,28 +1,160 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+    <svg id="gg145-attitude" xmlns="http://www.w3.org/2000/svg" width="400px" height="400px" viewBox="0 0 100 100">
+      <g id="gg145-attitude-pos" stroke-width="1" stroke="#fff" fill="#fff"
+         :transform="rotate"
+         text-anchor='middle' font-family="sans-serif" font-size="6">
+
+        <rect fill="#29B6F6" x="-100" y="-200" width="200" height="200"></rect>
+        <rect fill="#8B4513" x="-100" y="0"  width="200" height="200"></rect>
+
+        <!-- pitch up -->
+        <line x1="-8"  y1="-6.25"   x2="8"  y2="-6.25"/>
+        <line x1="-16" y1="-12"     x2="-4" y2="-12"  />
+        <text stroke-width="0.1" x="0" y="-10">10</text>
+        <line x1="4"   y1="-12"     x2="16" y2="-12"  />
+
+        <line x1="-8"  y1="-18.75"  x2="8"  y2="-18.75"/>
+        <line x1="-16" y1="-24"     x2="-4" y2="-24"  />
+        <text stroke-width="0.1" x="0" y="-22">20</text>
+        <line x1="4"   y1="-24"     x2="16" y2="-24"  />
+
+        <line x1="-8"  y1="-31.25"   x2="8"  y2="-31.25"/>
+        <line x1="-16" y1="-37.5"    x2="-4" y2="-37.5"  />
+        <text stroke-width="0.1" x="0" y="-35">30</text>
+        <line x1="4"   y1="-37.5"    x2="16" y2="-37.5"  />
+
+        <line x1="-8"  y1="-43.75"   x2="8"  y2="-43.75"/>
+        <line x1="-16" y1="-50.0"    x2="-4" y2="-50.0"  />
+        <text stroke-width="0.1" x="0" y="-48">40</text>
+        <line x1="4"   y1="-50.0"    x2="16" y2="-50.0"  />
+
+        <line x1="-8"  y1="-56.25"   x2="8"  y2="-56.25"/>
+        <line x1="-16" y1="-62.5"    x2="-4" y2="-62.5"  />
+        <text stroke-width="0.1" x="0" y="-60.5">50</text>
+        <line x1="4"   y1="-62.5"    x2="16" y2="-62.5"  />
+
+        <line x1="-8"  y1="-68.75"   x2="8"  y2="-68.75"/>
+        <line x1="-16" y1="-75.0"    x2="-4" y2="-75.0" />
+        <text stroke-width="0.1" x="0" y="-73">60</text>
+        <line x1="4"   y1="-75.0"    x2="16" y2="-75.0" />
+
+        <!-- pitch down -->
+        <line x1="-8"  y1="6.25"   x2="8"  y2="6.25"/>
+        <line x1="-16" y1="12"     x2="-4" y2="12"  />
+        <text stroke-width="0.1" x="0" y="14">10</text>
+        <line x1="4"   y1="12"     x2="16" y2="12"  />
+
+        <line x1="-8"  y1="18.75"   x2="8"  y2="18.75"/>
+        <line x1="-16" y1="24"     x2="-4" y2="24"  />
+        <text stroke-width="0.1" x="0" y="26">20</text>
+        <line x1="4"   y1="24"     x2="16" y2="24"  />
+
+        <line x1="-8"  y1="31.25"   x2="8"  y2="31.25"/>
+        <line x1="-16" y1="37.5"    x2="-4" y2="37.5"  />
+        <text stroke-width="0.1" x="0" y="39">30</text>
+        <line x1="4"   y1="37.5"    x2="16" y2="37.5"  />
+
+        <line x1="-8"  y1="43.75"   x2="8"  y2="43.75"/>
+        <line x1="-16" y1="50.0"    x2="-4" y2="50.0"  />
+        <text stroke-width="0.1" x="0" y="52">40</text>
+        <line x1="4"   y1="50.0"    x2="16" y2="50.0"  />
+
+        <line x1="-8"  y1="56.25"   x2="8"  y2="56.25"/>
+        <line x1="-16" y1="62.5"    x2="-4" y2="62.5"  />
+        <text stroke-width="0.1" x="0" y="64.5">50</text>
+        <line x1="4"   y1="62.5"    x2="16" y2="62.5"  />
+
+        <line x1="-8"  y1="68.75"   x2="8"  y2="68.75"/>
+        <line x1="-16" y1="75.0"    x2="-4" y2="75.0" />
+        <text stroke-width="0.1" x="0" y="77">60</text>
+        <line x1="4"   y1="75.0"    x2="16" y2="75.0" />
+
+      </g>
+      <g stroke-width="2" stroke="#ff0">
+        <line x1="30" y1="50" x2="43" y2="50"></line>
+        <line x1="42" y1="50" x2="42" y2="53"></line>
+
+        <line  x1="49" y1="50" x2="51" y2="50"/>
+
+        <line x1="58" y1="53" x2="58" y2="50"></line>
+        <line x1="57" y1="50" x2="70" y2="50"></line>
+
+      </g>
+
+      <g id='gg145-attitude-dial' stroke-width="1" stroke="#fff" :transform="dial">
+        <line stroke-width='2' x1='20.00' y1='-34.64' x2='24.50' y2='-42.44' />
+        <line stroke-width='2' x1='34.64' y1='-20.00' x2='42.44' y2='-24.50' />
+        <line stroke-width='2' x1='40.00' y1='0.00' x2='49.00' y2='0.00' />
+        <line stroke-width='2' x1='-20.00' y1='-34.64' x2='-24.50' y2='-42.44' />
+        <line stroke-width='2' x1='-34.64' y1='-20.00' x2='-42.44' y2='-24.50' />
+        <line stroke-width='2' x1='-40.00' y1='-0.00' x2='-49.00' y2='-0.00' />
+        <line x1='6.95' y1='-39.39' x2='7.81' y2='-44.32' />
+        <line x1='13.68' y1='-37.59' x2='15.39' y2='-42.29' />
+        <line x1='28.28' y1='-28.28' x2='31.82' y2='-31.82' />
+        <line x1='-6.95' y1='-39.39' x2='-7.81' y2='-44.32' />
+        <line x1='-13.68' y1='-37.59' x2='-15.39' y2='-42.29' />
+        <line x1='-28.28' y1='-28.28' x2='-31.82' y2='-31.82' />
+        <line x1='0.00' y1='-40.00' x2='0.00' y2='-45.00' />
+
+        <path fill="#fff" d="M-4 -50 L4 -50 L 0 -40 z"></path>
+      </g>
+
+      <g stroke-width="1" stroke="#ff0" fill="#ff0">
+        <path d="M46 18 L54 18 L50 11 z"></path>
+      </g>
+
+
+      <rect fill="transparent" stroke="#9E9E9E" stroke-width="8" x="0" y="0" width="100" height="100"></rect>
+    </svg>
+
+    <br />
+
+    <input type="range" min="-45" max="45" v-model="roll" />
+    roll: {{ roll }}<br />
+
+    <input type="range" min="-90" max="90" v-model="pitch" />
+    pitch: {{ pitch }}
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+
+  data: () => ({
+    roll: 0,
+    pitch: 0
+  }),
+
+  computed:{
+    rotate(){
+      return 'translate(50, 50) rotate(' + this.roll + ') translate(0,' + this.pitch + ')';
+    },
+
+    dial(){
+      let r  = 48.0
+      let cx = 50.0
+      let cy = 50.0
+
+      var x;
+      var y;
+    //var t;
+      var v;
+    //var w;
+
+      //     <path d="M47 16 L54 16 L50 10 z"></path>
+    //w = this.roll
+      v = (this.roll - 90) * (Math.PI / 180.0)
+      x = Math.cos(v) * r + cx
+      y = Math.sin(v) * r + cy
+      x = 50
+      y = 50
+      return 'translate(' + x + ',' + y + ')' + 'rotate(' + this.roll + ')';
+    }
+
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
